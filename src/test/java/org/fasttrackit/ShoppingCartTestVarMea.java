@@ -19,6 +19,8 @@ public class ShoppingCartTestVarMea {
     // am copiat totul din SearchTest; partea de cautare a vaselor
     public void addToCartFromSearchResultsTest() {
 
+        //etc
+
         System.setProperty("webdriver.chrome.driver",
                 "src\\test\\resources\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();

@@ -15,6 +15,7 @@ public class ShoppingCartTest {
     @Test
 
     public void addToCartFromSearchResultsTest() {
+
         System.setProperty("webdriver.chrome.driver",
                 "src\\test\\resources\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
