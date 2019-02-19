@@ -21,9 +21,18 @@ public class ShoppingCartTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://fasttrackit.org/selenium-test");
 
+        System.out.println("Opened homepage");
+
+        //Logger.info("opened  homepage");- logarea care se foloseste de fapt in testare si nu sout
+        //debug e cel mai detaliat nivel de logare. warn, info..le putem filtra mai tarziu
+
         String keyword = "vase";
         driver.findElement(By.className("input-text")).
                 sendKeys(keyword + Keys.ENTER);
+
+
+        //logarea informatiei se face folosind sout
+        System.out.println("Pressed enter in search field");
 
         // extract product name from XPath to a variable for further use
         // make sure the XPath would still contain the product name
